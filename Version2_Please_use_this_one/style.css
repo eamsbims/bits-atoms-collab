@@ -1,0 +1,117 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: Lato, Arial, sans-serif;
+}
+canvas {
+  display: block;
+}
+
+.wert{
+  margin-top:10px;
+  opacity: 0.7;
+  font-style: 100;
+  font-size: 60%;
+}
+
+.sliderContainer {
+  width: 400px;
+  margin-top: 20px; 
+}
+
+.slider::after {
+  content: "100";
+  color: red;
+  font-size: 20px;
+  position: absolute;
+  left: 80%;
+  top: 20%;
+}
+
+
+.slider::before {
+  content: "1";
+  color: red;
+  font-size: 20px;
+  position: absolute;
+  left: 80%;
+  top: 20%;
+}
+
+#myRange1 {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 50px;
+  background: linear-gradient(to right, black , #FF0000);
+  outline: none;
+  opacity: 0.6;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+  border-radius: 2px;
+}
+
+#myRange2 {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 50px;
+  background: linear-gradient(to right, black , #00FF00);
+  outline: none;
+  opacity: 0.6;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+  border-radius: 2px;
+}
+
+#myRange3 {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 50px;
+  background: linear-gradient(to right, black, #0000FF);
+  outline: none;
+  opacity: 0.6;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+  border-radius: 2px;
+}
+
+#myRange1:hover {
+  opacity: 1;
+}
+
+#myRange2:hover {
+  opacity: 1;
+}
+
+#myRange3:hover,
+.value-name:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 40px;
+  height: 80px;
+  background: white;
+  border-radius: 5%;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 8px;
+  height: 65px;
+  background: black;
+  border: none;
+  border-radius: 1px;
+  cursor: pointer;
+}
+
+.value-name {
+  font-size: 25px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.bad-good{
+  padding-bottom: 1px;
+}
